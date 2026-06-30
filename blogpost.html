@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+     body >   div{
+    
+            text-align: center;
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: aquamarine;
+}
+        p::first-line{
+font-weight: bold;
+        }
+        p::first-letter{
+            font-size: x-large;
+            color: blue;
+        }
+        blockquote::before{
+          content:   "❝" ;   
+            }
+        a:link{
+            display: block;
+            color: blue;
+            text-decoration: none;
+        }  
+        a:visited{
+            color: purple;
+        }  
+a:hover{
+    text-decoration: underline;
+}
+.topics h4{
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+h4+h4{
+    color: green;
+}
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Java Full Stack Development</h1>
+        <h5>Saran Kumar</h5>
+        <p>Full Stack Development is one of the most popular career paths in software development.It allows developers to build both the front end and back end of web applications.Learning HTML,CSS,Javascript,React,Java,Spring Boot,and MySQL helps create complete web application </p>
+        <blockquote>Sucess comes from consistant learning and practice</blockquote>
+        <a href="#">Click Here</a>
+        <a href="#">Click Here</a>
+        <a href="#">Click Here</a>
+        <div class="topics">
+            <h4>HTML</h4>
+            <h4>CSS</h4>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
