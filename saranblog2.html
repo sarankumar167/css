@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+.blog-section{
+    /*display:flex;*/
+    /*gap:20px;*/
+    padding:20px;
+    /*justify-content:center;*/
+    text-align: center;
+}
+
+.blog{
+    display: inline-block;
+    border:2px solid black;
+    width:300px;
+    padding:15px;
+    /*text-align:center;*/
+    vertical-align: top;
+    margin : 10px;
+}
+
+.blog img{
+    width:100%;
+    height:200px;
+}
+
+
+a[href^="https"]{
+    color:red;
+}
+
+
+img[src$=".jpg"]{
+    border-radius:0 25px 0 25px;
+}
+
+
+@media (max-width:600px){
+
+  /*  .blog-section{
+        flex-direction:column;
+        align-items:center;
+    }*/
+    .blog{
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    body{
+        font-size:14px;
+    }
+
+}
+
+
+@media (orientation:portrait){
+
+    .blog-section{
+        background-color:lightyellow;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<div class="blog-section">
+
+    <div class="blog">
+        <h2>Travel Blog</h2>
+        <img src="travel.jpg" alt="Travel">
+        <p>Explore beautiful places around the world.</p>
+        <a href="https://www.google.com">Read More</a>
+    </div>
+
+    <div class="blog">
+        <h2>Technology Blog</h2>
+        <img src="tech.jpg" alt="Technology">
+        <p>Latest news about AI and web development.</p>
+        <a href="http://example.com">Read More</a>
+    </div>
+
+    <div class="blog">
+        <h2>Food Blog</h2>
+        <img src="food.jpg" alt="Food">
+        <p>Discover delicious recipes and restaurants.</p>
+        <a href="https://github.com">Read More</a>
+    </div>
+
+</div>
+
+</body>
+</html>
